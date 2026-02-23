@@ -1,16 +1,16 @@
-# Word2Vec — Skip-Gram with Negative Sampling with Numpy
+# Word2Vec: Skip-Gram with Negative Sampling with Numpy
 
 ## Project Structure
 
 ```
 word2vec/
-├── word2vec.py      — Word2Vec class: embedding matrices, forward pass, backward pass, nearest neighbours
-├── corpus.py        — Text loading, tokenization, vocabulary building, subsampling
-├── trainer.py       — Training loop, skip-gram pair generation, learning rate decay
-├── utils.py         — Sigmoid, cosine similarity, negative sampler
-├── train.py         — Entry point: wires everything together and prints nearest neighbours
+├── word2vec.py - Word2Vec class: embedding matrices, forward pass, backward pass, nearest neighbours
+├── corpus.py - Text loading, tokenization, vocabulary building, subsampling
+├── trainer.py - Training loop, skip-gram pair generation, learning rate decay
+├── utils.py - Sigmoid, cosine similarity, negative sampler
+├── train.py - Entry point: wires everything together and prints nearest neighbours
 └── data/
-    └── text8        — Training corpus
+    └── text8 - Training corpus
 ```
 
 ## Data
