@@ -24,12 +24,14 @@ unzip data/text8.zip -d data/
 
 ## File Descriptions
 
-**`corpus.py`** — Loads raw text from disk, tokenizes it, builds the vocabulary with word-to-index and index-to-word mappings, converts tokens to integer ids, and subsamples frequent words.
+**`corpus.py`** - Loads raw text from disk, tokenizes it, builds the vocabulary with word-to-index and index-to-word mappings, converts tokens to integer ids, and subsamples frequent words.
 
-**`utils.py`** — Numerically stable sigmoid function, cosine similarity between two vectors, and a negative sampler that draws word indices proportional to `frequency^0.75`.
+**`utils.py`** - Numerically stable sigmoid function, cosine similarity between two vectors, and a negative sampler that draws word indices proportional to `frequency^0.75`.
 
-**`word2vec.py`** — Holds the two embedding matrices `W_in` and `W_out`. Implements the SGNS forward pass (loss and probabilities) and backward pass (gradients and SGD update). Also provides nearest-neighbour lookup by cosine similarity.
+**`word2vec.py`** - Holds the two embedding matrices `W_in` and `W_out`. Implements the SGNS forward pass (loss and probabilities) and backward pass (gradients and SGD update). Also provides nearest-neighbour lookup by cosine similarity.
 
-**`trainer.py`** — Generates (center, context) skip-gram pairs using a variable-length window, then runs the training loop with linear learning rate decay across all epochs.
+**`trainer.py`** - Generates (center, context) skip-gram pairs using a variable-length window, then runs the training loop with linear learning rate decay across all epochs.
 
-**`train.py`** — Entry point. Loads and preprocesses data, calls the trainer, and prints nearest neighbours for a set of probe words.
+**`train.py`** - Entry point. Loads and preprocesses data, calls the trainer, and prints nearest neighbours for a set of probe words.
+
+**Note: ** - In the repository, the data file is not pushed, as it is large.
